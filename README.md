@@ -1,4 +1,4 @@
-# Proyecto: Sitio web compuservicios
+# Proyecto: Sitio web CompuServicios
 Este proyecto ha sido desarrollado usando React JS
 
 
