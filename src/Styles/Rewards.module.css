@@ -1,0 +1,91 @@
+.section_title{
+    text-align: center;
+    color:var(--secondary-bg-color);
+    font-size: calc(1.8rem + 1vw);
+    margin-bottom: 3rem;
+}
+.rewards_list>div{
+    width: 250px;
+    height: 300px;
+    padding: 1rem;
+    margin: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center;
+    transition: all ease .3s;
+    -webkit-transition: all ease .3s;
+    -moz-transition: all ease .3s;
+    -ms-transition: all ease .3s;
+    -o-transition: all ease .3s;
+}
+.rewards_list>div>img{
+    display: inline-block;
+    position: relative;
+    width: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.rewards_list>div>span{
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: 3rem;
+}
+.rewards_list>div>p{
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: lighter;
+    margin-top: 1rem;
+}
+.rewards_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.rewards{
+    margin:2rem auto;
+    max-width: 1000px;
+}
+
+.rewards_list>div:hover{
+    background: #ffffff;
+    box-shadow:  7px 7px 14px  rgba(28,33,48,0.7),             -7px -7px 14px #ffffff;
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+    transition: all ease .3s;
+    -webkit-transition: all ease .3s;
+    -moz-transition: all ease .3s;
+    -ms-transition: all ease .3s;
+    -o-transition: all ease .3s;
+    
+    width: 300px;
+    height: 350px;
+}
+
+.rewards{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media (min-width:700px){
+    .rewards{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        padding:3rem;
+    }
+}

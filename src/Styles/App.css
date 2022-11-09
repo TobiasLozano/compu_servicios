@@ -1,0 +1,21 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root{
+    --main-bg-color:rgb(28, 33, 48);
+    --secondary-bg-color:rgb(2, 143, 118);
+    --aux-color:rgb(209, 67, 52);
+    --main-text-color:rgb(255, 234, 173);
+    --white:rgb(255, 255, 255);
+
+
+}
+body{
+    font-family: "Gill Sans", sans-serif;
+    overflow-x: hidden;
+}
+
+

@@ -1,0 +1,144 @@
+.nav {
+  background-color: var(--main-bg-color);
+  color: var(--white);
+  font-size: 1.2rem;
+  
+}
+.cotization{
+  background-color: var(--secondary-bg-color);
+  padding: .6rem;
+  border-radius:2rem;
+  height: 2rem;
+
+ 
+}
+.nav_toggle {
+  position: absolute;
+  cursor: pointer;
+  margin: 0 1rem;
+  right: 0;
+}
+.menu_icon {
+  font-size: 2rem;
+  fill: var(--aux-color);
+}
+.close_icon {
+  display: none;
+}
+.menu_icon, .close_icon {
+  margin-top: 2rem;
+  font-size: 2rem;
+  fill: var(--aux-color);
+}
+
+.nav_checkbox {
+  display: none;
+}
+.nav_menu {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  padding:  3rem 0;
+  height: 0vh;
+  width: 0%;
+  transition:0.5s all ease-out ;
+  -webkit-transition:0.5s all ease-out ;
+  -moz-transition:0.5s all ease-out ;
+  -ms-transition:0.5s all ease-out ;
+  -o-transition:0.5s all ease-out ;
+}
+.link_section {
+  list-style-type: none;
+  display: none;
+  height: 2rem;
+
+
+}
+
+.link_section a {
+  color: var(--main-text-color);
+  text-decoration: none;
+  height: 2rem;
+
+}
+.nav_checkbox:checked ~.nav_menu  .link_section{ 
+    display: block;
+
+}
+.nav_checkbox:checked ~.nav_menu {
+  width: 100%;
+  height: 100vh;
+  padding:  5rem 0;
+  transition:0.5s all ease-out;
+  -webkit-transition:0.5s all ease-out;
+  -moz-transition:0.5s all ease-out;
+  -ms-transition:0.5s all ease-out;
+  -o-transition:0.5s all ease-out;
+}
+
+.nav_checkbox:checked ~ .nav_toggle .close_icon{
+    display: block;
+}
+.nav_checkbox:checked ~ .nav_toggle .menu_icon{ 
+    display: none;
+
+}
+.logo{
+  position: absolute;
+  margin: 1.5rem;
+  left: 2rem;
+  width: 70px;
+  font-weight:bolder ;
+}
+
+.link_section>a:hover~.imagen{ 
+ background-color: black;
+
+}
+
+.link_section:last-child:hover{
+  border:none;
+  background-color: var(--secondary-bg-color);
+  opacity: .7;
+  border-radius:2rem;
+
+}
+.link_section:hover{
+  border-bottom: solid .2rem  rgba(209, 67, 52,0.3);
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+}
+@media (min-width:700px) {
+  .nav_menu{
+    display: flex;
+    flex-direction:row;
+    justify-content: end;
+    align-items: center;
+    width:70%;
+padding-right: 2rem;
+gap: 1rem;
+
+
+
+  }
+  .nav_menu .link_section{
+    display: inline;
+    padding: 0;
+
+  }
+  
+  .menu_icon{
+    display: none;
+  }
+  .nav{
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    justify-content: end;
+  }
+  
+}

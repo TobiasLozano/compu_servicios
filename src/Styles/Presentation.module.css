@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+.front_page {
+  height: calc(100vh - 6em);
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(28, 33, 48, 0.95),
+      rgba(209, 67, 52, 0.9)
+    ),
+    url("../Images/frontPage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: end;
+  justify-content: end;
+  position: relative;
+}
+.text {
+  font-family: "Fredoka One", cursive;
+  font-size: calc(4em + 1vw);
+  font-weight: 400;
+  color: var(--main-text-color);
+  display: flex;
+  flex-direction: column;
+  margin: 3rem;
+}
+.slogan {
+  color: var(--main-text-color);
+
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 1rem;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 600;
+}

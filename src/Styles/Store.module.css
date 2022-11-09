@@ -1,0 +1,95 @@
+.store {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: var(--main-bg-color);
+  max-width: 700px;
+  margin: auto;
+  justify-content: center;
+  font-weight: normal;
+
+}
+.store_info {
+  font-size: 1rem;
+  height: 40vh;
+  box-shadow: 10px 10px 10px 0px var(--aux-color);
+  margin: 1rem 1rem;
+  background-color: rgba(248, 150, 126, 0.144);
+  padding: 2rem 1rem;
+  border-radius: 30% 20% 20% 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  -webkit-border-radius: 30% 20% 20% 0%;
+  -moz-border-radius: 30% 20% 20% 0%;
+  -ms-border-radius: 30% 20% 20% 0%;
+  -o-border-radius: 30% 20% 20% 0%;
+}
+.section_title {
+  color: var(--secondary-bg-color);
+  font-size: calc(1.8rem + 1vw);
+  text-align: center;
+}
+.about {
+  text-align: center;
+}
+.adress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.ubication {
+  font-weight: bold;
+}
+.store_image {
+  background-image: url("../Images/store.webp");
+  height: 40vh;
+  margin: 1rem 1rem;
+  box-shadow: 10px 10px 10px 0px var(--aux-color);
+  transition:all 0.5s ease-in;
+  border-radius: 20% 30% 0% 20%;
+  animation: change_image 4s infinite ;
+  -webkit-animation: change_image 4s infinite ;
+  -webkit-border-radius: 20% 30% 0% 20%;
+  -moz-border-radius: 20% 30% 0% 20%;
+  -ms-border-radius: 20% 30% 0% 20%;
+  -o-border-radius: 20% 30% 0% 20%;
+  -webkit-transition:all 0.5s ease-in;
+  -moz-transition:all 0.5s ease-in;
+  -ms-transition:all 0.5s ease-in;
+  -o-transition:all 0.5s ease-in;
+}
+@keyframes change_image {
+  from{
+  opacity: 1;
+  transition:all 0.5s ease-in;
+  -webkit-transition:all 0.5s ease-in;
+  -moz-transition:all 0.5s ease-in;
+  -ms-transition:all 0.5s ease-in;
+  -o-transition:all 0.5s ease-in;
+}
+  
+  to{
+  opacity: .9;
+  transition:all 0.5s ease-in;
+  -webkit-transition:all 0.5s ease-in;
+  -moz-transition:all 0.5s ease-in;
+  -ms-transition:all 0.5s ease-in;
+  -o-transition:all 0.5s ease-in;
+}
+}
+
+@media (min-width: 700px) {
+  .store {
+    display: flex;
+    flex-direction: column;
+  }
+  .store_info {
+    width: 70%;
+  }
+  .store_image {
+    width: 70%;
+    margin-left: 30%;
+  }
+}
