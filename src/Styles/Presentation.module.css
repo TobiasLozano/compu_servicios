@@ -31,9 +31,13 @@
 
   width: 100%;
   text-align: center;
-  position: absolute;
-  bottom: 1rem;
+  margin-bottom: 1rem;
   font-size: 1.5rem;
   font-style: italic;
   font-weight: 600;
+}
+@media(max-width:400px){
+  .text{
+    margin: 1rem;
+  }
 }
